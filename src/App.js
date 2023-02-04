@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Aboutme from "./Aboutme"
+import React from 'react';
+import ContentDetails from './ContentDetails';
+
+
+
 
 function App() {
+  const [showClicked, setShowClicked] = React.useState(false)
+  function handleClick(event) {
+    setShowClicked(true)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className="header-section">
+        <Header handleClick={handleClick} />
+      </div>
+      <div className="resume-content">
+        {showClicked ? <ContentDetails /> : <Aboutme />}
+      </div>
     </div>
   );
 }
 
 export default App;
+
