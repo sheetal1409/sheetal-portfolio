@@ -54,6 +54,7 @@ function App() {
                             reliable product.Currently am focused on building responsive web apps.
                         </p>
                     </section>
+
                     <section id="aboutme" className="section">
                         <SectionTitle number="01." name="About Me"></SectionTitle>
                         <AboutMe />

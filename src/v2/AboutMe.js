@@ -11,7 +11,7 @@ export function AboutMe(props) {
 
                 <p>Since then I have built two production-ready React applications with test driven development. I enabled CI/CD and deployed applications to the internet using Netlify.</p>
                 <p>Here are a few technologies I’ve been working with recently:</p>
-                <div class="skills">
+                <div className="skills">
                     <div className='about-skillsets'> <ul>
                         <li>React</li>
                         <li>HTML</li>

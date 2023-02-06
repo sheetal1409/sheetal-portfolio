@@ -94,6 +94,7 @@ body {
     top: 0;
 }
 
+
 .logo {
     color: var(--green);
     font-size: 2em;
@@ -223,6 +224,22 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width:450px) {
+    .title-header .name {
+        font-size: clamp(3vw, 3.5vw, 80px);
+    }
+
+    .title-header .name::after {
+        top: 8px;
+    }
+
+    .nav-header {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}
+
 .skills {
     display: flex;
 }
@@ -309,9 +326,10 @@ body {
     margin-top: 50px;
 }
 
+
 .experience .experience-companyul {
     list-style: none;
-    width: 15vw;
+    width: fit-content;
 }
 
 .experience .experience-companyul li {
@@ -332,6 +350,29 @@ body {
     color: var(--green);
     border-left: 2px solid var(--green);
     background-color: var(--lightest-navy);
+}
+
+@media (max-width:450px) {
+    .experience {
+        flex-direction: column;
+    }
+
+    .experience .experience-companyul {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .experience .experience-companyul .experience-selected {
+        color: var(--green);
+        border-left: 0;
+        border-top: 2px solid var(--green);
+        background-color: var(--lightest-navy);
+    }
+
+    .experience .experience-companyul li {
+        border-top: 2px solid var(--lightest-navy);
+        border-left: 0;
+    }
 }
 
 .experience .experience-content .experience-roledetail {
@@ -364,7 +405,7 @@ body {
     padding: 1px;
     list-style: none;
     margin-top: 15px;
-    font-size: 1.2vw;
+    font-size: clamp(var(--fz-lg), 1vw, var(--fz-xl))
 }
 
 .experience-jd li::before {
@@ -395,6 +436,8 @@ body {
     align-items: flex-start;
 }
 
+
+
 @media (max-width:730px) {
     .projects .project {
         height: 35vh;
@@ -403,11 +446,17 @@ body {
 
 @media (max-width:550px) {
     .projects .project {
-        height: 40vh;
+        height: 38vh;
     }
 
     .logo {
         font-size: 1em;
+    }
+}
+
+@media (max-width:400px) {
+    .projects .project {
+        height: 45vh;
     }
 }
 
