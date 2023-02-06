@@ -26,7 +26,7 @@ export function AboutMe(props) {
             </div>
 
             <div className='about-picture'>
-                <img src="/profile.jpg" alt="profile" className='about-image' />
+                <img src="./profile.jpg" alt="profile" className='about-image' />
             </div>
 
         </div >)

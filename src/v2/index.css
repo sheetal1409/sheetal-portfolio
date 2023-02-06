@@ -9,7 +9,7 @@ html {
 
 @font-face {
     font-family: 'SF Mono';
-    src: url(SFMono-Regular-8799e6387338d58f2f137df821c86eb4.woff2) format('woff2');
+    src: url("./SFMono-Regular-8799e6387338d58f2f137df821c86eb4.woff2") format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: auto;
