@@ -14,13 +14,19 @@ export function AboutMe(props) {
                 <div className="skills">
                     <div className='about-skillsets'> <ul>
                         <li>React</li>
+                        <li>Javascript</li>
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>Java</li>
+                        <li>SQL</li>
                     </ul></div>
                     <div className='about-skillsets'> <ul>
-                        <li>Javascript</li>
+                        <li>Cypress Automation</li>
                         <li>React Testing Library</li>
+                        <li>Cucumber Framework</li>
                         <li>JIRA</li>
+                        <li>Jenkins</li>
+                        <li>Agile Methodology</li>
                     </ul></div>
                 </div>
             </div>
